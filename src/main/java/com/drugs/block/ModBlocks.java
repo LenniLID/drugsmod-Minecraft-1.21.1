@@ -1,0 +1,73 @@
+package com.drugs.block;
+
+import com.drugs.Drugsmod;
+import com.drugs.block.custom.CannabisPlantCropBlock;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.Block;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.MapColor;
+import net.minecraft.block.piston.PistonBehavior;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.Identifier;
+
+public class ModBlocks {
+
+    public static final Block GROW_LIGHT = registerBlock("grow_light",
+            new Block(AbstractBlock.Settings.create().strength(0.3f)
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .luminance(state -> 15)));
+
+    public static final Block NUTRIENT_RICH_SOIL = registerBlock("nutrient_rich_soil",
+            new Block(AbstractBlock.Settings.create().strength(0.5f)
+                    .sounds(BlockSoundGroup.ROOTED_DIRT)));
+
+    public static final Block GROW_BOX = registerBlock("grow_box",
+            new Block(AbstractBlock.Settings.create().strength(0.5f)
+                    .sounds(BlockSoundGroup.GLASS)));
+
+
+
+
+
+
+
+
+
+
+    private static Block registerBlock(String name, Block block) {
+        registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, Identifier.of(Drugsmod.MOD_ID, name), block);
+    }
+
+    private static void registerBlockItem(String name, Block block) {
+        Registry.register(Registries.ITEM, Identifier.of(Drugsmod.MOD_ID, name),
+                new BlockItem(block, new Item.Settings()));
+    }
+
+
+    public static final CannabisPlantCropBlock CANNABIS_CROP = registerBlockWithoutBlockItem("cannabis_crop",
+            new CannabisPlantCropBlock(AbstractBlock.Settings.create().noCollision()
+                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
+    private static CannabisPlantCropBlock registerBlockWithoutBlockItem(String name, CannabisPlantCropBlock block) {
+        return Registry.register(Registries.BLOCK, Identifier.of(Drugsmod.MOD_ID, name), block);
+    }
+
+
+    public static void registerModBlocks() {
+        Drugsmod.LOGGER.info("Registering Mod Blocks for " + Drugsmod.MOD_ID);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
+            entries.add(ModBlocks.GROW_LIGHT);
+            entries.add(ModBlocks.NUTRIENT_RICH_SOIL);
+            entries.add(ModBlocks.GROW_BOX);
+        });
+
+}}
+

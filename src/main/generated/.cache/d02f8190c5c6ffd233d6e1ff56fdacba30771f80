@@ -1,0 +1,4 @@
+// 1.21.1	2025-04-20T21:56:45.355744482	drugs-mod/Block Loot Tables
+16697bc46ee828b683d9293c1a834fa658393747 data/drugsmod/loot_table/blocks/cannabis_crop.json
+d1fbc365088e15babf3831769dab0199f5621bdc data/drugsmod/loot_table/blocks/grow_light.json
+6176752a504ae24ec5104bb2cbbfc0a9642ca717 data/drugsmod/loot_table/blocks/nutrient_rich_soil.json

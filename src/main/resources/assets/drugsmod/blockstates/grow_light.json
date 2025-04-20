@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "drugsmod:block/grow_light"
+    }
+  }
+}

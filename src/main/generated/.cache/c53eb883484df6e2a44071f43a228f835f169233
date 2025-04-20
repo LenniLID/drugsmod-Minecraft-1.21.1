@@ -1,0 +1,9 @@
+// 1.21.1	2025-04-20T21:56:45.355269091	drugs-mod/Recipes
+a64b9fa37b255660afeaadc8603b913ac6bf0d9e data/drugsmod/advancement/recipes/food/joint.json
+8763155898d7e3c96072f03d97fca87117c32bf1 data/drugsmod/advancement/recipes/redstone/grow_light.json
+89f2308f80531c856782ac870cac6c9cbf4ab7a2 data/drugsmod/recipe/nutrient_rich_soil.json
+1092df5ef1510a4f37caeced6ff3dcc6153fbdd4 data/drugsmod/recipe/grow_box.json
+79e3ed3003a8b33739ea5579400ce26fdbf7422d data/drugsmod/advancement/recipes/building_blocks/grow_box.json
+ed969ebb4d1f1a7d345a030afe6d4eba5230299d data/drugsmod/advancement/recipes/building_blocks/nutrient_rich_soil.json
+1785816fd7c87f3259cf822a383a7cc4afed5390 data/drugsmod/recipe/grow_light.json
+99c62ba937dc7a203b2cb050b0b3b8892d668cf4 data/drugsmod/recipe/joint.json

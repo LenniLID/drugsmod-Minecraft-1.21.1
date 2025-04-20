@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "d": {
+      "item": "drugsmod:nutrient_rich_soil"
+    },
+    "g": {
+      "item": "drugsmod:grow_light"
+    },
+    "t": {
+      "item": "minecraft:tinted_glass"
+    }
+  },
+  "pattern": [
+    "tgt",
+    "t t",
+    "tdt"
+  ],
+  "result": {
+    "count": 1,
+    "id": "drugsmod:grow_box"
+  }
+}
