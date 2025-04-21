@@ -43,5 +43,27 @@ public class Drugsmod implements ModInitializer {
 					new TradedItem(ModItems.JOINT, 1),
 					new ItemStack(Items.EMERALD, 3), 15, -1, 0.04f));
 		});
+
+		TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD, 10),
+					new ItemStack(ModItems.CANNABIS_SEEDS, 1), 4, 7, 0.04f));
+
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD, 10),
+					new ItemStack(ModItems.CANNABIS_SEEDS, 1), 4, 7, 0.04f));
+
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD, 10),
+					new ItemStack(ModItems.CANNABIS_SEEDS, 1), 4, 7, 0.04f));
+
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD, 10),
+					new ItemStack(ModItems.CANNABIS_SEEDS, 1), 4, 7, 0.04f));
+
+			factories.add((entity, random) -> new TradeOffer(
+					new TradedItem(Items.EMERALD, 10),
+					new ItemStack(ModItems.CANNABIS_SEEDS, 1), 4, 7, 0.04f));
+		});
 	}
 }

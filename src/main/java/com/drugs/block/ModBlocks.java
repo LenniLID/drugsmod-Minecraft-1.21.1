@@ -2,11 +2,9 @@ package com.drugs.block;
 
 import com.drugs.Drugsmod;
 import com.drugs.block.custom.CannabisPlantCropBlock;
+import com.drugs.block.custom.GrowBoxBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.Block;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.MapColor;
+import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -28,9 +26,9 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.ROOTED_DIRT)));
 
     public static final Block GROW_BOX = registerBlock("grow_box",
-            new Block(AbstractBlock.Settings.create().strength(0.5f)
-                    .sounds(BlockSoundGroup.GLASS)));
-
+            new GrowBoxBlock(AbstractBlock.Settings.create().strength(0.5f)
+                    .sounds(BlockSoundGroup.GLASS)
+                    .luminance(state -> 5)));
 
 
 
