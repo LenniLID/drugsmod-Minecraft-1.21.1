@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "drugsmod:block/grow_box_side-top-bottom",
+    "up": "drugsmod:block/grow_box_side-top-bottom",
+    "north": "drugsmod:block/grow_box_stage2",
+    "south": "drugsmod:block/grow_box_side-top-bottom",
+    "west": "drugsmod:block/grow_box_side-top-bottom",
+    "east": "drugsmod:block/grow_box_side-top-bottom",
+    "particle": "drugsmod:block/grow_box_side-top-bottom"
+  }
+}
