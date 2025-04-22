@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cross",
   "textures": {
-    "cross": "drugsmod:block/cannabis_crop_stage1"
+    "cross": "drugsmod:block/cally_cannabis_crop_stage3"
   }
 }

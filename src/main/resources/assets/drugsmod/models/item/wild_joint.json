@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "drugsmod:item/weed"
+    "layer0": "drugsmod:item/wild_joint"
   }
 }

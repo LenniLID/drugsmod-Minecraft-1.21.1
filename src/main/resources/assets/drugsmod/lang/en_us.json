@@ -1,7 +1,10 @@
 {
-  "item.drugsmod.weed": "Weed",
-  "item.drugsmod.joint": "Joint",
-  "item.drugsmod.cannabis_seeds": "Cannabis Seed",
+  "item.drugsmod.wild_weed": "Wild Weed",
+  "item.drugsmod.cally_weed": "Cally Weed",
+  "item.drugsmod.wild_joint": "Wild Joint",
+  "item.drugsmod.cally_joint": "Cally Joint",
+  "item.drugsmod.wild_cannabis_seeds": "Wild Cannabis Seeds",
+  "item.drugsmod.cally_cannabis_seeds": "Cally Cannabis Seeds",
   "block.drugsmod.grow_light": "Grow Light",
   "block.drugsmod.nutrient_rich_soil": "Nutrient-Rich Soil",
   "block.drugsmod.grow_box": "Grow Box"

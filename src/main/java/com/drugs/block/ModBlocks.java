@@ -1,7 +1,8 @@
 package com.drugs.block;
 
 import com.drugs.Drugsmod;
-import com.drugs.block.custom.CannabisPlantCropBlock;
+import com.drugs.block.custom.CallyCannabisPlantCropBlock;
+import com.drugs.block.custom.WildCannabisPlantCropBlock;
 import com.drugs.block.custom.GrowBoxBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
@@ -49,11 +50,19 @@ public class ModBlocks {
     }
 
 
-    public static final CannabisPlantCropBlock CANNABIS_CROP = registerBlockWithoutBlockItem("cannabis_crop",
-            new CannabisPlantCropBlock(AbstractBlock.Settings.create().noCollision()
+    public static final WildCannabisPlantCropBlock WILD_CANNABIS_PLANT_CROP_BLOCK = registerBlockWithoutBlockItem("wild_cannabis_crop",
+            new WildCannabisPlantCropBlock(AbstractBlock.Settings.create().noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
 
-    private static CannabisPlantCropBlock registerBlockWithoutBlockItem(String name, CannabisPlantCropBlock block) {
+    private static WildCannabisPlantCropBlock registerBlockWithoutBlockItem(String name, WildCannabisPlantCropBlock block) {
+        return Registry.register(Registries.BLOCK, Identifier.of(Drugsmod.MOD_ID, name), block);
+    }
+
+    public static final CallyCannabisPlantCropBlock CALLY_CANNABIS_PLANT_CROP_BLOCK = registerBlockWithoutBlockItem("cally_cannabis_crop",
+            new CallyCannabisPlantCropBlock(AbstractBlock.Settings.create().noCollision()
+                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
+    private static CallyCannabisPlantCropBlock registerBlockWithoutBlockItem(String name, CallyCannabisPlantCropBlock block) {
         return Registry.register(Registries.BLOCK, Identifier.of(Drugsmod.MOD_ID, name), block);
     }
 

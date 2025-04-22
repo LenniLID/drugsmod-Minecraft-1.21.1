@@ -8,5 +8,5 @@
     "west": "drugsmod:block/grow_box_side-top-bottom",
     "east": "drugsmod:block/grow_box_side-top-bottom",
     "particle": "drugsmod:block/grow_box_side-top-bottom"
-  }
+}
 }

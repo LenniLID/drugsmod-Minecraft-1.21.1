@@ -12,10 +12,14 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item WEED = registerItem("weed", new Item(new Item.Settings()));
-    public static final Item JOINT = registerItem("joint", new Item(new Item.Settings().food(ModFoodComponents.joint)));
-    public static final Item CANNABIS_SEEDS = registerItem("cannabis_seeds",
-            new AliasedBlockItem(ModBlocks.CANNABIS_CROP, new Item.Settings()));
+    public static final Item WILD_WEED = registerItem("wild_weed", new Item(new Item.Settings()));
+    public static final Item CALLY_WEED = registerItem("cally_weed", new Item(new Item.Settings()));
+    public static final Item WILD_JOINT = registerItem("wild_joint", new Item(new Item.Settings().food(ModFoodComponents.joint)));
+    public static final Item CALLY_JOINT = registerItem("cally_joint", new Item(new Item.Settings().food(ModFoodComponents.joint)));
+    public static final Item WILD_CANNABIS_SEEDS = registerItem("wild_cannabis_seeds",
+            new AliasedBlockItem(ModBlocks.WILD_CANNABIS_PLANT_CROP_BLOCK, new Item.Settings()));
+    public static final Item CALLY_CANNABIS_SEEDS = registerItem("cally_cannabis_seeds",
+            new AliasedBlockItem(ModBlocks.CALLY_CANNABIS_PLANT_CROP_BLOCK, new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Drugsmod.MOD_ID, name), item);
@@ -25,12 +29,14 @@ public class ModItems {
         Drugsmod.LOGGER.info("Registering Mod items for " + Drugsmod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
-            entries.add(WEED);
-            entries.add(JOINT);
+            entries.add(WILD_WEED);
+            entries.add(WILD_JOINT);
+            entries.add(CALLY_JOINT);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
-            entries.add(CANNABIS_SEEDS);
+            entries.add(WILD_CANNABIS_SEEDS);
+            entries.add(CALLY_CANNABIS_SEEDS);
         });
     }
 }

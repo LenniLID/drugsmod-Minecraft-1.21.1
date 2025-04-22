@@ -41,10 +41,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.NUTRIENT_RICH_SOIL))
                 .offerTo(exporter);
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.JOINT)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.WILD_JOINT)
                 .input(Items.PAPER)
-                .input(ModItems.WEED)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.WEED), FabricRecipeProvider.conditionsFromItem(ModItems.WEED))
+                .input(ModItems.WILD_WEED)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.WILD_WEED), FabricRecipeProvider.conditionsFromItem(ModItems.WILD_WEED))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CALLY_JOINT)
+                .input(Items.PAPER)
+                .input(ModItems.CALLY_WEED)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.CALLY_WEED), FabricRecipeProvider.conditionsFromItem(ModItems.CALLY_WEED))
                 .offerTo(exporter);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.GROW_LIGHT.asItem())

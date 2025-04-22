@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "drugsmod:item/joint"
+    "layer0": "drugsmod:item/cally_cannabis_seeds"
   }
 }

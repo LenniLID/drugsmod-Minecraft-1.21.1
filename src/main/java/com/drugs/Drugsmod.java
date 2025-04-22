@@ -27,43 +27,45 @@ public class Drugsmod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModLootTableModifiers.modifyLootTables();
-		CompostingChanceRegistry.INSTANCE.add(ModItems.WEED, 0.5f);
-		CompostingChanceRegistry.INSTANCE.add(ModItems.CANNABIS_SEEDS, 0.25f);
-		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CANNABIS_CROP, RenderLayer.getCutout());
+		CompostingChanceRegistry.INSTANCE.add(ModItems.WILD_WEED, 0.5f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.CALLY_WEED, 0.5f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.WILD_CANNABIS_SEEDS, 0.25f);
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WILD_CANNABIS_PLANT_CROP_BLOCK, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CALLY_CANNABIS_PLANT_CROP_BLOCK, RenderLayer.getCutout());
 
 
 		TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1, factories -> {
 			factories.add((entity, random) -> new TradeOffer(
-					new TradedItem(ModItems.WEED, 1),
+					new TradedItem(ModItems.WILD_WEED, 1),
 					new ItemStack(Items.EMERALD, 2), 15, -1, 0.04f));
 		});
 
 		TradeOfferHelper.registerVillagerOffers(VillagerProfession.CLERIC, 1, factories -> {
 			factories.add((entity, random) -> new TradeOffer(
-					new TradedItem(ModItems.JOINT, 1),
+					new TradedItem(ModItems.WILD_JOINT, 1),
 					new ItemStack(Items.EMERALD, 3), 15, -1, 0.04f));
 		});
 
 		TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
 			factories.add((entity, random) -> new TradeOffer(
 					new TradedItem(Items.EMERALD, 10),
-					new ItemStack(ModItems.CANNABIS_SEEDS, 1), 4, 7, 0.04f));
+					new ItemStack(ModItems.WILD_CANNABIS_SEEDS, 1), 4, 7, 0.04f));
 
 			factories.add((entity, random) -> new TradeOffer(
 					new TradedItem(Items.EMERALD, 10),
-					new ItemStack(ModItems.CANNABIS_SEEDS, 1), 4, 7, 0.04f));
+					new ItemStack(ModItems.WILD_CANNABIS_SEEDS, 1), 4, 7, 0.04f));
 
 			factories.add((entity, random) -> new TradeOffer(
 					new TradedItem(Items.EMERALD, 10),
-					new ItemStack(ModItems.CANNABIS_SEEDS, 1), 4, 7, 0.04f));
+					new ItemStack(ModItems.WILD_CANNABIS_SEEDS, 1), 4, 7, 0.04f));
 
 			factories.add((entity, random) -> new TradeOffer(
 					new TradedItem(Items.EMERALD, 10),
-					new ItemStack(ModItems.CANNABIS_SEEDS, 1), 4, 7, 0.04f));
+					new ItemStack(ModItems.WILD_CANNABIS_SEEDS, 1), 4, 7, 0.04f));
 
 			factories.add((entity, random) -> new TradeOffer(
 					new TradedItem(Items.EMERALD, 10),
-					new ItemStack(ModItems.CANNABIS_SEEDS, 1), 4, 7, 0.04f));
+					new ItemStack(ModItems.WILD_CANNABIS_SEEDS, 1), 4, 7, 0.04f));
 		});
 	}
 }

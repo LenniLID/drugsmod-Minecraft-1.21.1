@@ -8,17 +8,17 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
 
-public class CannabisPlantCropBlock extends CropBlock {
+public class CallyCannabisPlantCropBlock extends CropBlock {
     public static final int MAX_AGE = 7;
     public static final IntProperty AGE = IntProperty.of("age", 0, 7);
 
-    public CannabisPlantCropBlock(Settings settings) {
+    public CallyCannabisPlantCropBlock(Settings settings) {
         super(settings);
     }
 
     @Override
     protected ItemConvertible getSeedsItem() {
-        return ModItems.CANNABIS_SEEDS;
+        return ModItems.CALLY_CANNABIS_SEEDS;
     }
 
     @Override
