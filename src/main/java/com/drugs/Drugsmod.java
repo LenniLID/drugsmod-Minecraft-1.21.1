@@ -1,6 +1,7 @@
 package com.drugs;
 
 import com.drugs.block.ModBlocks;
+import com.drugs.block.entity.ModBlockEntities;
 import com.drugs.item.ModItems;
 import com.drugs.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
@@ -26,6 +27,7 @@ public class Drugsmod implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModBlockEntities.registerBlockEntities();
 		ModLootTableModifiers.modifyLootTables();
 		CompostingChanceRegistry.INSTANCE.add(ModItems.WILD_WEED, 0.5f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.CALLY_WEED, 0.5f);

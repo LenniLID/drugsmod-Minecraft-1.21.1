@@ -2,6 +2,7 @@ package com.drugs.block;
 
 import com.drugs.Drugsmod;
 import com.drugs.block.custom.CallyCannabisPlantCropBlock;
+import com.drugs.block.custom.PedestalBlock;
 import com.drugs.block.custom.WildCannabisPlantCropBlock;
 import com.drugs.block.custom.GrowBoxBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -30,6 +31,9 @@ public class ModBlocks {
             new GrowBoxBlock(AbstractBlock.Settings.create().strength(0.5f)
                     .sounds(BlockSoundGroup.GLASS)
                     .luminance(state -> 5)));
+
+    public static final Block PEDESTAL = registerBlock("pedestal",
+            new PedestalBlock(AbstractBlock.Settings.create().nonOpaque()));
 
 
 
@@ -74,6 +78,7 @@ public class ModBlocks {
             entries.add(ModBlocks.GROW_LIGHT);
             entries.add(ModBlocks.NUTRIENT_RICH_SOIL);
             entries.add(ModBlocks.GROW_BOX);
+            entries.add(ModBlocks.PEDESTAL);
         });
 
 }}
