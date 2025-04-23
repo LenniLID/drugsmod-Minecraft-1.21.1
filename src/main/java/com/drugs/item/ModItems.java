@@ -30,6 +30,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
             entries.add(WILD_WEED);
+            entries.add(CALLY_WEED);
             entries.add(WILD_JOINT);
             entries.add(CALLY_JOINT);
         });

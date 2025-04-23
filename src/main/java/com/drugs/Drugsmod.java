@@ -61,11 +61,11 @@ public class Drugsmod implements ModInitializer {
 
 			factories.add((entity, random) -> new TradeOffer(
 					new TradedItem(Items.EMERALD, 10),
-					new ItemStack(ModItems.WILD_CANNABIS_SEEDS, 1), 4, 7, 0.04f));
+					new ItemStack(ModItems.CALLY_CANNABIS_SEEDS, 1), 4, 7, 0.04f));
 
 			factories.add((entity, random) -> new TradeOffer(
 					new TradedItem(Items.EMERALD, 10),
-					new ItemStack(ModItems.WILD_CANNABIS_SEEDS, 1), 4, 7, 0.04f));
+					new ItemStack(ModItems.CALLY_CANNABIS_SEEDS, 1), 4, 7, 0.04f));
 		});
 	}
 }

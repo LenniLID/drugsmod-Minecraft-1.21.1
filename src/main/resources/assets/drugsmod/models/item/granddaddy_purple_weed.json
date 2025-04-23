@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "drugsmod:item/granddaddy_purple_weed"
+  }
+}
