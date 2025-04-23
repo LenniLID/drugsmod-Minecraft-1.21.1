@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "drugsmod:cally_weed"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "drugsmod:cally_joint"
+  }
+}

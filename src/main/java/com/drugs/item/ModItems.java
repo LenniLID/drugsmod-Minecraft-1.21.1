@@ -14,6 +14,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item WILD_WEED = registerItem("wild_weed", new Item(new Item.Settings()));
     public static final Item CALLY_WEED = registerItem("cally_weed", new Item(new Item.Settings()));
+    public static final Item GRANDDADDY_PURPLE = registerItem("granddaddy_purple", new Item(new Item.Settings()));
     public static final Item WILD_JOINT = registerItem("wild_joint", new Item(new Item.Settings().food(ModFoodComponents.joint)));
     public static final Item CALLY_JOINT = registerItem("cally_joint", new Item(new Item.Settings().food(ModFoodComponents.joint)));
     public static final Item WILD_CANNABIS_SEEDS = registerItem("wild_cannabis_seeds",
@@ -33,6 +34,7 @@ public class ModItems {
             entries.add(CALLY_WEED);
             entries.add(WILD_JOINT);
             entries.add(CALLY_JOINT);
+            entries.add(GRANDDADDY_PURPLE);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
