@@ -15,11 +15,11 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import org.jetbrains.annotations.Nullable;
 
-public class PedestalBlockEntity extends BlockEntity implements ImplementedInventory {
+public class GrowBoxBlockEntity extends BlockEntity implements ImplementedInventory {
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(1, ItemStack.EMPTY);
 
-    public PedestalBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.PEDESTAL_BE, pos, state);
+    public GrowBoxBlockEntity(BlockPos pos, BlockState state) {
+        super(ModBlockEntities.GROW_BOX_BE, pos, state);
     }
 
     @Override
