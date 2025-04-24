@@ -9,5 +9,8 @@
   "block.drugsmod.grow_light": "Grow Light",
   "block.drugsmod.nutrient_rich_soil": "Nutrient-Rich Soil",
   "block.drugsmod.grow_box": "Grow Box",
-  "block.drugsmod.pedestal": "Pedestal"
+  "item.drugsmod.sour_diesel_cannabis_seeds": "Sour Diesel Cannabis Seeds",
+  "item.drugsmod.granddaddy_purple_cannabis_seeds": "Granddaddy Purple Cannabis Seeds",
+  "item.drugsmod.sour_diesel_weed": "Sour Diesel Weed",
+  "item.drugsmod.granddaddy_purple_weed": "Granddaddy Purple Weed"
 }

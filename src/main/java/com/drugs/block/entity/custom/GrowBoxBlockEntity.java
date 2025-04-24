@@ -28,7 +28,8 @@ public class GrowBoxBlockEntity extends BlockEntity implements ImplementedInvent
     static {
         SEED_TO_CROP.put(ModItems.WILD_CANNABIS_SEEDS, ModItems.WILD_WEED);
         SEED_TO_CROP.put(ModItems.CALLY_CANNABIS_SEEDS,       ModItems.CALLY_WEED);
-        // add more seed→crop pairs here as you register them
+        SEED_TO_CROP.put(ModItems.SOUR_DIESEL_CANNABIS_SEEDS, ModItems.SOUR_DIESEL_WEED);
+        SEED_TO_CROP.put(ModItems.GRANDDADDY_PURPLE_CANNABIS_SEEDS,       ModItems.GRANDDADDY_PURPLE_WEED);
     }
 
     /** Returns true if the given item is a valid seed for this GrowBox. */
