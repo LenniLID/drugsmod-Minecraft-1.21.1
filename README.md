@@ -1,4 +1,6 @@
 ## DrugsMod - A Fabric Minecraft Mod
+**Warning:** DrugsMod is under active development. Features are experimental, may change, or might currently be configured for development only.
+
 Welcome to **DrugsMod**, a Minecraft mod built with the Fabric API that introduces a unique farming, trading, and crafting experience to the game. This mod is all about adding new crops, items, and trading options to expand the player’s gameplay and economy possibilities. Whether you're a creative farmer, trader, or collector, this mod provides dynamic content to keep your adventures exciting.
 ### Features
 1. **New Items**
